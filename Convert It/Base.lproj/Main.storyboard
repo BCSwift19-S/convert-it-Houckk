@@ -26,6 +26,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="userInputChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="QeZ-yx-Uru"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmP-GE-cxD">
                                 <rect key="frame" x="256" y="64" width="103" height="24"/>
@@ -88,6 +91,9 @@
                                     <segment title="-"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="signSegmentSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="olE-ax-LNR"/>
+                                </connections>
                             </segmentedControl>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="n3M-LW-GVZ">
                                 <rect key="frame" x="43.333333333333343" y="444" width="288.33333333333326" height="28"/>
@@ -148,6 +154,7 @@
                         <outlet property="formulaPicker" destination="WHQ-mS-GRd" id="eFW-qS-zhL"/>
                         <outlet property="fromUnitsLabel" destination="vmP-GE-cxD" id="Hbz-Pc-6AB"/>
                         <outlet property="resultsLabel" destination="ahc-hV-NAo" id="hdy-jg-FJe"/>
+                        <outlet property="signSegment" destination="dkg-jy-NE2" id="iQk-EY-UzR"/>
                         <outlet property="userInput" destination="7gG-jS-rxk" id="DfY-50-Fak"/>
                     </connections>
                 </viewController>
